@@ -1,5 +1,6 @@
 from random import randint
 from time import sleep
+from art import Art
 
 
 class Game:
@@ -114,9 +115,9 @@ class Game:
         print("4 : Exit")
 
     def printChoices(self) -> None:
-        print("1 : Rock")
-        print("2 : Paper")
-        print("3 : Scissor")
+        draw = Art()
+        print("1:      2:      3:    ")
+        print(draw.rock(), draw.paper(), draw.scissor())
 
     
     def gameResult(self,player1, player2) -> int:
